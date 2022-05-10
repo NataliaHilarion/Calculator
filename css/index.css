@@ -1,5 +1,6 @@
 @import url('./container.css');
 @import url('./calculator.css');
+@import url('./button.css');
 
 :root {
   --black: #000000;
@@ -11,6 +12,9 @@
   --orange: #FE9505;
   --primary: #111C81;
   --white: #ffffff;
+  --blue: #2D41F5;
+  --other: #F5F0E3;
+  --back: #E7E9EC;
   --linear: linear-gradient(180deg, #FEFEFE 0%, #E9ECEE 37.34%);
 }
 

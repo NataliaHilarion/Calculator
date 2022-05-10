@@ -1,0 +1,48 @@
+button {
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  inline-size: 67;
+  aspect-ratio: 1/1;
+  padding: 0;
+  font-size: 25px;
+  box-shadow: 4px 4px 5px #E0DBCE, -4px -4px 5px #FDFDFD;
+  background-color: var(--grey-bg);
+  font-family: 'Roboto', sans-serif;
+
+}
+
+button:active {
+  transform: scale(.9);
+}
+
+.number {
+  background-color: var(--grey-bg);
+  color: var(--grey20);
+  font-weight: 500;
+}
+
+.basicOperation {
+  background-color: var(--grey);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.equal {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.others {
+  background-color: var(--other);
+  color: var(--grey20);
+}
+
+.eraser {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.back {
+  background-color: var(--back);
+}
