@@ -17,36 +17,33 @@
   <div class="container">
     <div class="calculator">
       <div class="display">
-
+        <div class="previousValue" style="border: 1px solid red ;"></div>
+        <div class="currentValue"  style="border: 1px solid blue ;"></div>
       </div>
-      <button class="eraser">C</button>
-      <button class="others">+/-</button>
-      <button class="others">%</button>
-      <button class="basicOperation">&#247</button>
+      <button class="delete">C</button>
+      <button class="others" >+/-</button>
+      <button class="operator others">%</button>
+      <button class="operator divide" value="divide"><img src="./images/divide.png" alt="divide"></button>
       <button class="number">7</button>
       <button class="number">8</button>
       <button class="number">9</button>
-      <button class="basicOperation">x</button>
+      <button class="operator multiply" value="multiply"><img src="./images/multiply.png" alt="multiply"></button>
       <button class="number">4</button>
       <button class="number">5</button>
       <button class="number">6</button>
-      <button class="basicOperation">-</button>
+      <button class="operator subtract" value="subtract" ><img src="./images/subtract.png" alt="subtract"></button>
       <button class="number">1</button>
       <button class="number">2</button>
       <button class="number">3</button>
-      <button class="basicOperation">+</button>
+      <button class="operator add" value="add"><img src="./images/add.png" alt="add"></button>
       <button class="number">0</button>
-      <button>.</button>
+      <button class="number">.</button>
       <button class="back"><img src="./images/Vector.png" alt="borrar"></button>
-      <button class="equal">=</button>
+      <button class="equal operator" value="equal"> <img src="./images/equal.png" alt="equal"></button>
 
     </div>
   </div>
-
-
-
-
-
+  <script src="./javascript/index.js" type="module" ></script>
 </body>
 
 </html>
