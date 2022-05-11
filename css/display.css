@@ -1,0 +1,26 @@
+.display {
+  border: 11px solid black;
+  grid-column: 1 / -1;
+  block-size: 87px;
+  inline-size: 293px;
+  align-self: center;
+  background: var(--grey10);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+
+}
+
+.currentValue {
+  color: var(--display);
+  font-size: 28px;
+  padding-inline-end: 16px;
+}
+
+.previousValue {
+  color: var(--display);
+  font-size: 28px;
+  padding-inline-end: 16px;
+}

@@ -22,10 +22,14 @@ button:active {
   font-weight: 500;
 }
 
-.basicOperation {
+.operator {
   background-color: var(--grey);
   color: var(--primary);
   font-weight: 600;
+}
+
+.subtract img{
+  transform: translateY(-5px);
 }
 
 .equal {
@@ -33,12 +37,16 @@ button:active {
   color: var(--white);
 }
 
+.equal img {
+  transform: translateY(-5px);
+}
+
 .others {
   background-color: var(--other);
   color: var(--grey20);
 }
 
-.eraser {
+.delete {
   background-color: var(--orange);
   color: var(--white);
 }
