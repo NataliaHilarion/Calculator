@@ -1,7 +1,7 @@
 import Calculator from "./Calculator.js";
 
 export default class Display {
-  constructor($displayPreviousValue, $displayCurrentValue ) {
+  constructor($displayPreviousValue, $displayCurrentValue) {
     this.$displayCurrentValue = $displayCurrentValue;
     this.$displayPreviousValue = $displayPreviousValue;
     this.calculator = new Calculator();
@@ -34,8 +34,10 @@ export default class Display {
     this.printValues()
   }
 
-  doTheOperation(value){
-    this.operator !== 'equal' && this.calculate()
+  doTheOperation(value) {
+    if (this.operator !== 'equal') {
+      this.calculate();
+    }
     this.operator = value
     this.previousNumber = this.currentNumber || this.previousNumber
     this.currentNumber = ''
@@ -44,20 +46,16 @@ export default class Display {
 
   printValues() {
     this.$displayCurrentValue.textContent = this.currentNumber
-    this.$displayPreviousValue.textContent = `${this.previousNumber} ${this.signos[this.operator] || ''  }   `
+    this.$displayPreviousValue.textContent = `${this.previousNumber} ${this.signos[this.operator] || ''}   `
   }
 
-  calculate(){
+  calculate() {
     const previousNumber = parseFloat(this.previousNumber)
     const currentNumber = parseFloat(this.currentNumber)
 
-    if (isNaN(currentNumber) || isNaN(previousNumber) ) return
-    this.currentNumber = this.calculator[this.operator](previousNumber, currentNumber )
-
-
-
+    if (isNaN(currentNumber) || isNaN(previousNumber)) return
+    this.currentNumber = this.calculator[this.operator](previousNumber, currentNumber)
   }
-
 
 }
 
