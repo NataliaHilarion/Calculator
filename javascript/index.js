@@ -8,7 +8,7 @@ const $operator = document.querySelectorAll('.operator')
 const $back = document.querySelector('.back')
 const $delete = document.querySelector('.delete')
 
-const display = new Display($displayCurrentValue, $displayPreviousValue)
+const display = new Display($displayPreviousValue, $displayCurrentValue)
 
 $numberButton.forEach(button => {
   button.addEventListener('click', () => display.addNumber(button.innerHTML) )
@@ -18,4 +18,6 @@ $back.addEventListener('click', () =>  display.deleteNumber() )
 
 $delete.addEventListener('click', () => display.deleteAll())
 
-
+$operator.forEach( button => {
+  button.addEventListener('click', () => display.doTheOperation(button.value) )
+})
