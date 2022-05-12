@@ -1,18 +1,24 @@
 .calculator {
-  display: grid;
-  grid-template-columns: repeat(4, 67px);
-  grid-template-rows: 200px repeat(5, 67px);
-  gap: 17px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background: var(--linear);
+  border-radius: 20px;
   block-size: 640px;
   inline-size: 360px;
-  padding-inline: 20px;
+  border: 1px solid #00000020;
   box-sizing: border-box;
   box-shadow: 13px 13px 10px #E5E5E5;
-  border-radius: 20px;
-  border: 1px solid #00000020;
-  background: var(--linear)
+
 }
 
-
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 67px);
+  grid-template-rows: repeat(5, 67px);
+  gap: 17px;
+  align-items: center;
+}
 
