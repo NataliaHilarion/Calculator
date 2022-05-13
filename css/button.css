@@ -1,7 +1,6 @@
 button {
   border-radius: 30px;
   border: none;
-  cursor: pointer;
   inline-size: 67;
   aspect-ratio: 1/1;
   padding: 0;
@@ -9,11 +8,15 @@ button {
   box-shadow: 4px 4px 5px #E0DBCE, -4px -4px 5px #FDFDFD;
   background-color: var(--grey-bg);
   font-family: 'Roboto', sans-serif;
-
+  cursor: pointer;
 }
 
 button:active {
   transform: scale(.9);
+}
+
+.number:hover {
+  background-color: #e9ecee;
 }
 
 .number {
@@ -28,7 +31,16 @@ button:active {
   font-weight: 600;
 }
 
-.subtract img{
+.operator:hover {
+  background-color: #111C8126;
+}
+
+.operator:active {
+  background-color: var(--blue2);
+}
+
+.subtract img,
+.equal img {
   transform: translateY(-5px);
 }
 
@@ -37,13 +49,19 @@ button:active {
   color: var(--white);
 }
 
-.equal img {
-  transform: translateY(-5px);
+.equal:hover {
+  background-color: #2D41F5CC;
 }
 
 .others {
   background-color: var(--other);
   color: var(--grey20);
+  font-weight: 600;
+}
+
+.others:hover{
+  background-color: #6277851A;
+  color: black;
 }
 
 .delete {
@@ -51,6 +69,14 @@ button:active {
   color: var(--white);
 }
 
+.delete:hover{
+  background-color: #FE9505D9;
+}
+
 .back {
   background-color: var(--back);
+}
+
+.back:hover{
+  background-color: #0000000D;
 }
